@@ -1,13 +1,15 @@
 <!doctype html><html lang=en-us>
 <head>
 <meta charset=utf-8>
-<title>Posts</title>
+<title>树莓派安装 Tinc 记录</title>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel=alternate type=application/rss+xml href=https://ptable-1.github.io/index.xml title=/dev/null>
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Posts">
-<meta name=twitter:description content>
+<meta name=twitter:title content="树莓派安装 Tinc 记录">
+<meta name=twitter:description content="tinc 简介 简单地说，类似 zerotier
+具体参加官网：tinc-vpn
+从源码编译安装 sudo apt update sudo apt install -y make libssl-dev zlib1g-dev liblzo2-dev libreadline-dev libncurses5-dev texinfo curl http://www.tinc-vpn.org/packages/tinc-1.1pre11.tar.gz | tar xzvf - cd tinc-1.1pre11 ./configure make -j4 sudo make install 从 apt 安装 sudo apt update sudo apt install -y tinc ">
 <link rel=stylesheet href=https://ptable-1.github.io/fontawesome/css/all.min.css>
 <link crossorigin=anonymous href=/css/styles.min.css integrity rel="preload stylesheet" as=style>
 <link id=dark-mode-theme crossorigin=anonymous href=/css/dark.min.css integrity rel="preload stylesheet" as=style>
@@ -27,39 +29,30 @@
 <div class=container>
 <div class=posts-heading>
 <h1>
-Posts
+树莓派安装 Tinc 记录
 </h1>
 </div>
 </div>
 </div>
 </header>
 <div class=container role=main>
-<div class=posts-list>
-<article class=post-preview>
-<a href=https://ptable-1.github.io/posts/pi_tinc_install/>
-<h2 class=post-title>树莓派安装 Tinc 记录</h2>
-</a>
-<div class=post-entry>
-</div>
-<div class=postmeta>
-<span class=meta-post>
-<em class="fa fa-calendar-alt"></em>&nbsp;Nov 4, 2021
-</span>
-</div>
+<article class=article class=blog-post>
+<h2 id=tinc-简介>tinc 简介</h2>
+<p>简单地说，类似 zerotier<br>
+具体参加官网：<a href=https://www.tinc-vpn.org/>tinc-vpn</a></p>
+<h2 id=从源码编译安装>从源码编译安装</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo apt update
+sudo apt install -y make libssl-dev zlib1g-dev liblzo2-dev libreadline-dev libncurses5-dev texinfo
+curl http://www.tinc-vpn.org/packages/tinc-1.1pre11.tar.gz | tar xzvf -
+cd tinc-1.1pre11
+./configure
+make -j4
+sudo make install
+</code></pre></div><h2 id=从-apt-安装>从 apt 安装</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo apt update
+sudo apt install -y tinc
+</code></pre></div>
 </article>
-<article class=post-preview>
-<a href=https://ptable-1.github.io/posts/my-first-post/>
-<h2 class=post-title>My First Post</h2>
-</a>
-<div class=post-entry>
-</div>
-<div class=postmeta>
-<span class=meta-post>
-<em class="fa fa-calendar-alt"></em>&nbsp;Nov 4, 2021
-</span>
-</div>
-</article>
-</div>
 </div>
 <footer>
 <div class=social-icons>
